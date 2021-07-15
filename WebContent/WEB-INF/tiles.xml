@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="baseLayout"	template="/WEB-INF/tiles/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/tiles/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp" />
+	</definition>
+
+	<definition name="addUser" extends="baseLayout">
+		<put-attribute name="title" value="User Registration Form" />
+		<put-attribute name="body" value="/WEB-INF/jsp/addUser.jsp" />
+	</definition>
+	
+	<definition name="viewUser" extends="baseLayout">
+		<put-attribute name="title" value="View Users Details" />
+		<put-attribute name="body" value="/WEB-INF/jsp/viewUser.jsp" />
+	</definition>
+	
+	<definition name="addParty" extends="baseLayout">
+		<put-attribute name="title" value="Party Registration Form" />
+		<put-attribute name="body" value="/WEB-INF/jsp/addParty.jsp" />
+	</definition>
+	
+	<definition name="viewParty" extends="baseLayout">
+		<put-attribute name="title" value="View Party Information" />
+		<put-attribute name="body" value="/WEB-INF/jsp/viewParty.jsp" />
+	</definition>
+	
+	<definition name="addMaterial" extends="baseLayout">
+		<put-attribute name="title" value="Material Registration Form" />
+		<put-attribute name="body" value="/WEB-INF/jsp/addMaterial.jsp" />
+	</definition>
+	
+	<definition name="viewMaterial" extends="baseLayout">
+		<put-attribute name="title" value="View Material Information" />
+		<put-attribute name="body" value="/WEB-INF/jsp/viewMaterial.jsp" />
+	</definition>
+	
+	<definition name="addEmployee" extends="baseLayout">
+		<put-attribute name="title" value="Employee Registration Form" />
+		<put-attribute name="body" value="/WEB-INF/jsp/addEmployee.jsp" />
+	</definition>
+	
+	<definition name="viewEmployee" extends="baseLayout">
+		<put-attribute name="title" value="View Employee Details" />
+		<put-attribute name="body" value="/WEB-INF/jsp/viewEmployee.jsp" />
+	</definition>
+	 
+	 <definition name="uploadMultiFile" extends="baseLayout">
+		<put-attribute name="title" value="Upload Multi File" />
+		<put-attribute name="body" value="/WEB-INF/jsp/uploadMultiFile.jsp" />
+	</definition>
+	
+	<definition name="uploadOneFile" extends="baseLayout">
+		<put-attribute name="title" value="Upload One File" />
+		<put-attribute name="body" value="/WEB-INF/jsp/uploadOneFile.jsp" />
+	</definition>
+	<definition name="uploadResult" extends="baseLayout">
+		<put-attribute name="title" value="Upload Result" />
+		<put-attribute name="body" value="/WEB-INF/jsp/uploadResult.jsp" />
+	</definition>
+	 
+</tiles-definitions>
